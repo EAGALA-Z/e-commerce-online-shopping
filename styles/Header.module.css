@@ -1,0 +1,163 @@
+/* Header Container */
+.header {
+  background-color: #fff;
+  color: #111;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+/* --- Top Bar --- */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+.siteName {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #0070f3;
+}
+
+.languageSelect {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 8px;
+  background-color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* --- Bottom Menu --- */
+.bottomNav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bottomNav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.bottomNav li {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.bottomNav li:hover {
+  color: #0070f3;
+}
+
+/* Underline animation */
+.bottomNav li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  bottom: -6px;
+  background: #0070f3;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.bottomNav li:hover::after {
+  width: 100%;
+}
+
+/* Divider line below menu */
+.divider {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Center Hero Section --- */
+.heroSection {
+  text-align: center;
+  margin: 40px auto 30px;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.heroSection h1 {
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.heroSection p {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .topBar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .siteName {
+    position: static;
+    transform: none;
+    margin: 10px 0;
+    font-size: 1.8rem;
+  }
+
+  .bottomNav ul {
+    gap: 20px;
+  }
+
+  .bottomNav li {
+    font-size: 1rem;
+  }
+
+  .heroSection h1 {
+    font-size: 2rem;
+  }
+
+  .heroSection p {
+    font-size: 1rem;
+  }
+}

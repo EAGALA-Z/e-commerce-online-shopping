@@ -1,0 +1,154 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Newsletter Section */
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.newsletter h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.newsletter p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe input {
+  padding: 10px 12px;
+  width: 250px;
+  border: 1px solid #333;
+  background: transparent;
+  color: #fff;
+}
+
+.subscribe button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 30px 0;
+}
+
+/* Footer Columns */
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.column h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column li {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.column li:hover {
+  color: #fff;
+}
+
+/* Contact & Social */
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.currency img {
+  width: 20px;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.socials svg:hover {
+  color: #ccc;
+}
+
+/* Bottom Section */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.payments img {
+  height: 24px;
+  margin-left: 12px;
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

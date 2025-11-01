@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.8rem;
+  }
+}
